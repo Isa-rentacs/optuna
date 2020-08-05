@@ -11,7 +11,7 @@ RUN apt-get -y update \
     && pip install --no-cache-dir -U pip \
     && pip install ${PIP_OPTIONS} -U setuptools
 
-WORKDIR /workspaces
+WORKDIR /workspaces/optuna
 COPY . .
 
 ARG BUILD_TYPE='dev'
